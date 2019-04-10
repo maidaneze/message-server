@@ -1,10 +1,10 @@
 package users
 
 import (
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 	"testing"
 
-	"challenge/services/passwords"
+	"github.com/maidaneze/message-server/services/passwords"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"challenge/model"
-	"challenge/utils"
+	"github.com/maidaneze/message-server/model"
+	"github.com/maidaneze/message-server/utils"
 	"testing"
 
 	"net/http"

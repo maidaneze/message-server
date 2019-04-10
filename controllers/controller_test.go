@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"challenge/dao"
+	"github.com/maidaneze/message-server/dao"
 	"net/http"
 	"testing"
 
@@ -10,9 +10,9 @@ import (
 
 	"bytes"
 
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 
-	"challenge/services/auth"
+	"github.com/maidaneze/message-server/services/auth"
 
 	"math"
 

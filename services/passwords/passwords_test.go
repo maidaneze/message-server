@@ -1,7 +1,7 @@
 package passwords
 
 import (
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

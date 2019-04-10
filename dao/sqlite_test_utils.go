@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"challenge/utils"
+	"github.com/maidaneze/message-server/utils"
 	"os"
 	"testing"
 	"time"

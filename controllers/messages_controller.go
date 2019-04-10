@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"bytes"
-	"challenge/model"
-	"challenge/services/auth"
-	"challenge/services/messages"
+	"github.com/maidaneze/message-server/model"
+	"github.com/maidaneze/message-server/services/auth"
+	"github.com/maidaneze/message-server/services/messages"
 	"encoding/json"
 	"net/http"
 )

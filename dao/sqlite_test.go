@@ -7,10 +7,10 @@ import (
 
 	"strings"
 
-	"challenge/services/users"
+	"github.com/maidaneze/message-server/services/users"
 
-	"challenge/model"
-	"challenge/services/auth"
+	"github.com/maidaneze/message-server/model"
+	"github.com/maidaneze/message-server/services/auth"
 
 	"time"
 

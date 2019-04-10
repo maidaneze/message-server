@@ -1,6 +1,6 @@
 package dao
 
-import "challenge/model"
+import "github.com/maidaneze/message-server/model"
 
 type DB interface {
 

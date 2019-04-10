@@ -1,11 +1,11 @@
 package passwords
 
 import (
-	"challenge/utils"
+	"github.com/maidaneze/message-server/utils"
 	"crypto/rand"
 	"time"
 
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 
 	"github.com/mattn/go-sqlite3"
 )

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"challenge/controllers"
-	"challenge/dao"
+	"github.com/maidaneze/message-server/controllers"
+	"github.com/maidaneze/message-server/dao"
 	"log"
 )
 

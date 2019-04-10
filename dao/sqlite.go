@@ -1,12 +1,12 @@
 package dao
 
 import (
-	"challenge/utils"
+	"github.com/maidaneze/message-server/utils"
 	"database/sql"
 	"errors"
 	"time"
 
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 )
 
 type SqliteDB struct {

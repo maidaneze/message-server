@@ -1,7 +1,7 @@
 package messages
 
 import (
-	"challenge/model"
+	"github.com/maidaneze/message-server/model"
 	"testing"
 	"time"
 

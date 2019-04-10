@@ -1,8 +1,8 @@
 package users
 
 import (
-	"challenge/model"
-	"challenge/services/passwords"
+	"github.com/maidaneze/message-server/model"
+	"github.com/maidaneze/message-server/services/passwords"
 )
 
 //Validates if the usersRequestDTO is valid
