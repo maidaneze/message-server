@@ -27,7 +27,7 @@ docker build --tag=message-server .
 ### Running the server
 
 ```
-docker run -v $(pwd):/go/src/github.com/maidaneze/message-server -p 8080:8080 message-server
+docker run -v $(pwd)/db:/server/db -p 8080:8080 message-server
 ```
 
 ### Testing
@@ -63,7 +63,7 @@ On success it returns the userId of the new user.
 Example:
 ```
 curl -v POST -d '{"username":"testUser", "password":"testPassword"}' localhost:8080/users
-{"id":3}
+{"id":1}
 ```
 
 #### Login User
@@ -74,7 +74,7 @@ On success it returns the userId of the user and an authorization token.
 Example:
 ```
 curl -v GET -d '{"username":"testUser", "password":"testPassword"}' localhost:8080/login
-{"id":3,"token":"8b0d2185-9ec6-4a05-877f-e48a7b27cf2f"}
+{"id":1,"token":"4974e5a5-c2ef-4562-be0d-54ab937b590b"}
 ```
 
 #### Send Message
@@ -86,8 +86,8 @@ It returns the messageId and a timestamp on success.
 Example:
 
 ```
-curl -v POST -d '{"sender":3, "recipient":4, "content":{"type":"text","text":"testMessage"}}' -H 'Authorization:Bearer 8b0d2185-9ec6-4a05-877f-e48a7b27cf2f' localhost:8080/messages
-{"id":4,"timestamp":"2019-04-10T18:07:14Z"}
+curl -v POST -d '{"sender":1, "recipient":2, "content":{"type":"text","text":"testMessage"}}' -H 'Authorization:Bearer 4974e5a5-c2ef-4562-be0d-54ab937b590b' localhost:8080/messages
+{"id":1,"timestamp":"2019-04-12T12:52:45Z"}
 ```
 
 
@@ -114,6 +114,6 @@ Requires an access token for authentication.
 
 Example:
 ```
-curl -v GET -H 'Authorization:Bearer 6649d5ab-b8bb-4fd2-a1b9-05f910c30f8f' "localhost:8080/messages?id=4&start=4&limit=100"
-{"messages":[{"id":4,"timestamp":"2019-04-10T18:07:14.607113352-03:00","sender":3,"recipient":4,"content":{"type":"text","text":"testMessage"}}]}
+curl -v GET -H 'Authorization:Bearer e1289aba-acf2-4b24-a5a7-8559d9831c6b' "localhost:8080/messages?id=2&start=1&limit=100"
+{"messages":[{"id":1,"timestamp":"2019-04-12T12:52:45.642356449Z","sender":1,"recipient":2,"content":{"type":"text","text":"testMessage"}}]}
 ```
