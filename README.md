@@ -18,7 +18,17 @@ User information and messages are stored in an sqlite-3 database with the passwo
     - [Send Message](#send-message)
     - [Get Message](#get-message)
 
+### Building the docker image
+
+```
+docker build --tag=message-server .
+```
+
 ### Running the server
+
+```
+docker run -v $(pwd):/go/src/github.com/maidaneze/message-server -p 8080:8080 message-server
+```
 
 ### Testing
 
