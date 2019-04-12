@@ -8,7 +8,7 @@ WORKDIR /server
 COPY . ./
 
 # Building using -mod=vendor, which will utilize the v
-RUN CGO_ENABLED=0 GOOS=linux go build -mod=vendor -o app
+RUN CGO_ENABLED=1 GOOS=linux go build -mod=vendor -o app
 
 EXPOSE 8080
 
